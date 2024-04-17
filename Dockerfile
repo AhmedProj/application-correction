@@ -9,4 +9,5 @@ RUN pip install -r requirements.txt
 COPY train.py .
 COPY src ./src
 COPY api ./api
+RUN chmod +x ./api/run.sh
 CMD ["bash", "-c", "./api/run.sh"]
