@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: titanic
-        image: ahmed577/application-correction
+        image: ahmed577/application-correction:v${{ steps.set_build_number.outputs.BUILD_NUMBER }}
         ports:
         - containerPort: 5000
