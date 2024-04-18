@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser(description="Paramètres du random forest")
 parser.add_argument("--n_trees", type=int, default=20, help="Nombre d'arbres")
 args = parser.parse_args()
 
-n_trees = args.n_trees
+n_trees = args.n_trees #test
 
 URL_RAW = "https://minio.lab.sspcloud.fr/lgaliana/ensae-reproductibilite/data/raw/data.csv"
 config = import_yaml_config("configuration/config.yaml")
